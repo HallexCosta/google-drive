@@ -3,7 +3,8 @@ import ConnectionManager from "./src/connectionManager.js";
 import ViewManager from "./src/viewManager.js";
 import DragAndDropManager from "./src/dragAndDropManager.js";
 
-const apiUrl = "https://localhost:3000";
+// const apiUrl = "https://localhost:3000";
+const apiUrl = "https://gdrive-webapi-hallex.herokuapp.com";
 
 const appController = new AppController({
   viewManager: new ViewManager(),
