@@ -18,26 +18,30 @@ const localHostSSL = {
 const protocol = isProduction ? http : https;
 const sslConfig = isProduction ? {} : localHostSSL;
 
-const routes = new Routes();
-const server = protocol.createServer(sslConfig, routes.handler.bind(routes));
+try {
+  const routes = new Routes();
+  const server = protocol.createServer(sslConfig, routes.handler.bind(routes));
 
-const io = new Server(server, {
-  cors: {
-    origin: "*",
-    credentials: false,
-  },
-});
+  const io = new Server(server, {
+    cors: {
+      origin: "*",
+      credentials: false,
+    },
+  });
 
-routes.setSocketInstance(io);
+  routes.setSocketInstance(io);
 
-io.on("connection", (socket) => {
-  logger.info(`someone connected: ${socket.id}`);
-});
+  io.on("connection", (socket) => {
+    logger.info(`someone connected: ${socket.id}`);
+  });
 
-const startServer = () => {
-  const { address, port } = server.address();
-  const protocol = isProduction ? "http" : "https";
-  logger.info(`Server ready at ${protocol}://${address}:${port}`);
-};
+  const startServer = () => {
+    const { address, port } = server.address();
+    const protocol = isProduction ? "http" : "https";
+    logger.info(`Server ready at ${protocol}://${address}:${port}`);
+  };
 
-server.listen(port, startServer);
+  server.listen(port, startServer);
+} catch (e) {
+  console.error(e);
+}
