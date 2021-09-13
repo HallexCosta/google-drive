@@ -25,16 +25,22 @@ Marque esse projeto com uma estrela 🌟
   - [x] Deve exibir progresso de upload
   - [x] Deve ter função de upload via drag and drop
 
+## Desafios adicionais
+
+- [x] Corrigir o upload de multiplos arquivos que está imprimindo porcentagem acima de 100% - OK
+- [x] Teste de integração para a rota GET lá no backend - OK
+- [x] Tratar erros que possam ocorrer no meio da aplicação do backend (try/catch, validações do codígo seguindo a métrica de 100% de codecoverage).
+
 ## Desafios para alunos pós projeto
 
 1. _Backend_: Salvar o arquivo na AWS ou qualquer serviço de storage
-   - Nosso projeto hoje armazena arquivos em disco. o desafio é você via Stream, fazer upload para algum serviço na nuvem
-   - Como plus, manter 100% de code coverage, ou seja, crie testes para sua nova feature
+   - [] Nosso projeto hoje armazena arquivos em disco. o desafio é você via Stream, fazer upload para algum serviço na nuvem
+   - [] Como plus, manter 100% de code coverage, ou seja, crie testes para sua nova feature
 2. _Frontend_: Adicionar testes no frontend e alcançar 100% de code coverage
-   - Você aprendeu como fazer testes no backend. Usar o mesmo processo para criar testes unitários no frontend com Jest
-   - Caso tenha duvidas, acesse o [exemplo](https://github.com/ErickWendel/tdd-frontend-example) e deixe uma estrela!
+   - [] Você aprendeu como fazer testes no backend. Usar o mesmo processo para criar testes unitários no frontend com Jest
+   - [] Caso tenha duvidas, acesse o [exemplo](https://github.com/ErickWendel/tdd-frontend-example) e deixe uma estrela!
 3. _Infraestrutura_: Publicar aplicação com seu SSL customizado em máquina virtual
-   - Você aprendeu a gerar SSL local, o desafio é você criar um certificado (pode ser com o _Let's Encrypt_) e adicionar na sua aplicação
+   - [] Você aprendeu a gerar SSL local, o desafio é você criar um certificado (pode ser com o _Let's Encrypt_) e adicionar na sua aplicação
 
 ### Considerações
 
