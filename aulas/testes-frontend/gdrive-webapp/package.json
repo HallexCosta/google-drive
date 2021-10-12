@@ -1,0 +1,23 @@
+{
+  "name": "@hallexcosta/gdrive-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server public",
+    "dev": "npx http-server public --cert certificates/cert.pem --key certificates/key.pem --ssl -o",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch --runInBand",
+    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --no-cache --coverage --runInBand"
+  },
+  "keywords": [],
+  "author": "hallexcosta",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
+}
