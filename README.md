@@ -37,8 +37,8 @@ Marque esse projeto com uma estrela 🌟
    - [] Nosso projeto hoje armazena arquivos em disco. o desafio é você via Stream, fazer upload para algum serviço na nuvem
    - [] Como plus, manter 100% de code coverage, ou seja, crie testes para sua nova feature
 2. _Frontend_: Adicionar testes no frontend e alcançar 100% de code coverage
-   - [] Você aprendeu como fazer testes no backend. Usar o mesmo processo para criar testes unitários no frontend com Jest
-   - [] Caso tenha duvidas, acesse o [exemplo](https://github.com/ErickWendel/tdd-frontend-example) e deixe uma estrela!
+   - [x] Você aprendeu como fazer testes no backend. Usar o mesmo processo para criar testes unitários no frontend com Jest
+   - [x] Caso tenha duvidas, acesse o [exemplo](https://github.com/ErickWendel/tdd-frontend-example) e deixe uma estrela!
 3. _Infraestrutura_: Publicar aplicação com seu SSL customizado em máquina virtual
    - [] Você aprendeu a gerar SSL local, o desafio é você criar um certificado (pode ser com o _Let's Encrypt_) e adicionar na sua aplicação
 
